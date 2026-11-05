@@ -1,0 +1,636 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Helina Baby | For Every Kind of Day{% endblock %}
+
+{% block content %}
+
+<!-- ================= NAVBAR ================= -->
+
+<!-- NAVBAR -->
+<header class="site-header">
+
+    <!-- Full-width navbar fabric -->
+    <img src="{% static 'assets/fabrics/header1.png' %}"
+         alt=""
+         class="navbar-fabric"
+         aria-hidden="true">
+
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid px-lg-5">
+
+        <!-- Mobile toggle -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#helinaNav"
+                aria-controls="helinaNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Brand logo -->
+        <a href="/" class="navbar-brand">
+            <img src="{% static 'assets/logos/helina-logo.png' %}"
+                 alt="Helina Baby">
+        </a>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse" id="helinaNav">
+
+            <!-- Left navigation -->
+            <ul class="navbar-nav nav-left">
+                <li class="nav-item">
+                    <a class="nav-link" href="#shop">Shop</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#why-helina">Why Helina</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Babywearing Hub</a>
+                </li>
+            </ul>
+
+            <!-- Right navigation -->
+            <ul class="navbar-nav nav-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="#support">Carrier Support</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#registration">Product Registration</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link cart-link" href="#cart" aria-label="Shopping cart">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M3 3h2l2.2 12.2a2 2 0 0 0 2 1.7h8.2a2 2 0 0 0 2-1.6L21 8H6"/>
+                            <circle cx="10" cy="20" r="1"/>
+                            <circle cx="18" cy="20" r="1"/>
+                        </svg>
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+</header>
+
+
+
+
+<!-- HERO SECTION -->
+<main>
+
+    <section class="hero-section">
+
+        <!-- Hero background image -->
+        <img
+            src="{% static 'assets/images/hero-family.png' %}"
+            alt="Caregiver and child together"
+            class="hero-family-image"
+        >
+
+        <!-- Subtle image overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Swinging Coming Soon badge -->
+        <a
+            href="#waitlist"
+            class="coming-soon-image"
+            aria-label="Coming soon — join the waitlist"
+        >
+            <img
+                src="{% static 'assets/images/coming2.png' %}"
+                alt="Coming Soon"
+            >
+        </a>
+
+        <!-- Hero content -->
+        <div class="hero-content">
+
+
+            <!-- Waitlist button -->
+            <a href="#waitlist" class="hero-waitlist">
+
+                <span class="hero-waitlist-text">
+                    JOIN THE WAITLIST
+                </span>
+
+                <span class="hero-waitlist-arrow"></span>
+
+                <span class="hero-button-shine"></span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- WE HEAR YOU SECTION -->
+
+
+<section id="story" class="we-hear-you">
+
+    <!-- Stitching layer -->
+    <div
+        class="we-hear-you-stitch"
+        style="--we-hear-stitch: url('{% static 'assets/stitching/stitching1.png' %}');"
+        aria-hidden="true">
+    </div>
+
+    <!-- LEFT: Artwork -->
+    <div class="we-hear-you-artwork">
+        <img
+            src="{% static 'assets/images/we-hear-you.png' %}"
+            alt="We Hear You."
+        >
+    </div>
+
+    <!-- RIGHT: Text -->
+    <div class="we-hear-you-copy">
+
+        <h2 class="we-hear-you-heading">
+            We created Helina Baby for those moments.
+To make closeness a little easier, carrying a lot more comfortable, so you have one less thing to worry about.
+        </h2>
+
+        <h3 class="we-hear-you-script">
+            We Hear You.
+        </h3>
+
+     
+        <a href="#waitlist" class="we-hear-you-button">
+            THE HELINA BABY STORY
+        </a>
+
+    </div>
+
+</section>
+
+<!-- SECTION 3: ONE CARRIER -->
+<section id="real-life" class="made-real-life">
+
+    <!-- LEFT: TEXT CONTENT -->
+    <div class="real-life-content">
+
+        <h2 class="real-life-title">
+            One Carrier, Built for<br>
+            Day One to Day 1000
+        </h2>
+
+        <h3 class="real-life-orange-title">
+            Because your baby is expensive enough.
+        </h3>
+
+        <p class="real-life-intro">
+            The truth is your first carrier usually isn't your last.
+            Most carriers are built for one stage, which somehow means
+            buying another one six months later. And then another.
+        </p>
+
+        <h3 class="real-life-hear-title">
+            We Hear You.
+        </h3>
+
+        <p class="real-life-text">
+            Helina Baby skips that whole expensive, mind bending cycle.
+            It adjusts to fit your 8 pound newborn to a 40 pound toddler
+            and fits bodies of all shapes and sizes. So when it’s someone
+            else’s turn to carry, just pass the baby. No resizing.
+            No readjusting. No figuring out whose settings were whose.
+        </p>
+
+        <a href="#waitlist" class="real-life-button">
+            WHY HELINA?
+        </a>
+
+    </div>
+
+    <!-- RIGHT: STATIC SCRAPBOOK PHOTOGRAPH -->
+    <div class="real-life-visual">
+
+        <div class="real-life-collage">
+
+            <img
+                src="{% static 'assets/images/mother-on-call-with-baby.png' %}"
+                alt="Mother carrying her baby"
+                class="real-life-scrapbook"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- =====================================================
+     SECTION 4 — INFORMED BY SCIENCE
+===================================================== -->
+
+<section id="science" class="science-section">
+
+    <!-- Full kitchen background -->
+    <img
+        src="{% static 'assets/images/story-kitchen.png' %}"
+        alt=""
+        class="science-kitchen-bg"
+        aria-hidden="true"
+    >
+
+    <!-- Warm overlay -->
+    <div class="science-kitchen-overlay"></div>
+
+
+    <!-- LEFT IMAGE — GROUPED FIGMA ARTWORK -->
+<div class="science-visual">
+
+    <img
+        src="{% static 'assets/images/group-196.png' %}"
+        alt="Mother carrying her baby in a Helina Baby carrier"
+        class="science-grouped-image"
+    >
+
+</div>
+
+    <!-- =================================================
+         RIGHT — CONTENT
+    ================================================== -->
+
+    <div class="science-content-area">
+
+        <div class="science-content">
+
+            <h2 class="science-title">
+                Informed by Science
+            </h2>
+
+            <h3 class="science-subtitle">
+                Designed to carry comfortably, for longer
+            </h3>
+
+            <p class="science-text">
+                Helina Baby is built around anatomy, biomechanics and physics.
+                Not because those words sound impressive, but because they matter
+                when you’re carrying a growing human.
+            </p>
+
+            <p class="science-text">
+                Every part of the carrier has a purpose. The Helina HUGFIT™ System
+                adjusts to your baby’s body to support them in the M position as
+                they grow. The X-shaped straps distribute your baby’s weight across
+                your body, not one spot. And we chose undyed organic cotton because
+                babies put everything in their mouths. Including their carrier.
+            </p>
+
+            <a
+                href="#waitlist"
+                class="science-button"
+            >
+                WHY HELINA?
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SECTION 5 — WORN AND REVIEWED
+========================================================= -->
+
+<section id="reviews" class="reviews-section">
+
+    <div class="reviews-inner">
+
+        <!-- TITLE -->
+        <h2 class="reviews-title">
+            Worn and Reviewed!
+        </h2>
+
+
+        <!-- TESTIMONIAL AREA -->
+        <div class="reviews-slider">
+
+            <!-- LEFT ARROW -->
+            <button
+                type="button"
+                class="reviews-arrow reviews-arrow-left"
+                aria-label="Previous review">
+                ‹
+            </button>
+
+
+            <!-- REVIEW 1 -->
+            <article class="review-card review-card-one">
+
+                <div class="review-pin"></div>
+
+                <div class="review-photo review-photo-one">
+                    <img
+                        src="{% static 'assets/images/mother-baby-box.png' %}"
+                        alt="Helina Baby review"
+                    >
+                </div>
+
+                <div class="review-paper">
+
+                    <div class="review-stars">
+                        ★ ★ ★ ★ ★
+                    </div>
+
+                    <p class="review-quote">
+                        I can’t stop talking about how much I
+                        love my carrier. It’s been a real part
+                        of our everyday life.
+                    </p>
+
+                    <p class="review-name">
+                        Emma B.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- REVIEW 2 -->
+            <article class="review-card review-card-two">
+
+                <div class="review-pin"></div>
+
+                <div class="review-video">
+
+                    <img
+                        src="{% static 'assets/images/story-mother-baby.jpg' %}"
+                        alt="Helina Baby review"
+                    >
+
+                    <span class="review-play">
+                        ▶
+                    </span>
+
+                </div>
+
+                <div class="review-paper review-video-paper">
+
+                    <div class="review-stars">
+                        ★ ★ ★ ★ ★
+                    </div>
+
+                    <p class="review-name">
+                        Dr. Amanda Radway
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- REVIEW 3 -->
+            <article class="review-card review-card-three">
+
+                <div class="review-pin"></div>
+
+                <div class="review-photo review-photo-three">
+
+                    <img
+                        src="{% static 'assets/images/story-mother-baby.jpg' %}"
+                        alt="Helina Baby review"
+                    >
+
+                </div>
+
+                <div class="review-paper">
+
+                    <div class="review-stars">
+                        ★ ★ ★ ★ ★
+                    </div>
+
+                    <p class="review-quote">
+                        Compared to bulky carriers,
+                        Helina Baby makes everyday
+                        carrying feel much easier.
+                    </p>
+
+                    <p class="review-name">
+                        Jeanette T.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- RIGHT ARROW -->
+            <button
+                type="button"
+                class="reviews-arrow reviews-arrow-right"
+                aria-label="Next review">
+                ›
+            </button>
+
+        </div>
+
+
+        <!-- CTA -->
+        <a href="#waitlist" class="reviews-button">
+            SHOP HELINA
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SECTION 6 — YOUR JOURNEY DOESN'T END AT CHECKOUT
+========================================================= -->
+
+<section class="journey-section">
+
+    <div class="journey-inner">
+
+        <!-- LEFT CONTENT -->
+        <div class="journey-copy">
+
+            <h2>
+                Your journey doesn't end
+                <span>at checkout.</span>
+            </h2>
+
+            <h3>
+                And neither does our Commitment.
+            </h3>
+
+            <p>
+                Wearing your baby safely, confidently and comfortably is incredibly
+                important. And, sometimes a manual and a few diagrams just aren't
+                going to cut it.
+            </p>
+
+            <h3 class="journey-subtitle">
+                We Hear You.
+            </h3>
+
+            <p>
+                In many cultures, there has always been an auntie, elder or
+                experienced parent nearby to help. We believe that kind of
+                community still matters.
+            </p>
+
+            <p>
+                If you have questions about your Helina Baby Carrier,
+                <a href="#contact">contact us.</a>
+                We're here to help you figure it out.
+            </p>
+
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="journey-visual">
+
+            <div class="journey-photo">
+                <img
+                    src="{% static 'assets/images/mother-baby-box.png' %}"
+                    alt="Mother and baby using the Helina Baby carrier"
+                >
+            </div>
+
+           
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BRAND STANDARDS STRIP
+========================================================= -->
+
+<section class="brand-standards-strip">
+
+    <img
+        src="{% static 'assets/images/brands7.png' %}"
+        alt="Helina Baby brand standards and certifications"
+    >
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="helina-footer">
+
+    <div class="footer-content">
+
+        <!-- LOGO -->
+        <div class="footer-brand">
+            <a href="/" aria-label="Helina Baby home">
+
+                <img
+                    src="{% static 'assets/images/helina-logo.png' %}"
+                    alt="Helina Baby"
+                    class="footer-logo"
+                >
+
+            </a>
+        </div>
+
+
+        <!-- NAVIGATION COLUMN 1 -->
+        <nav class="footer-links" aria-label="Shop navigation">
+
+            <a href="#">Shop</a>
+            <a href="#">Why Helina?</a>
+            <a href="#">Education</a>
+            <a href="#">Blog</a>
+            <a href="#">Carrier Support</a>
+            <a href="#">User Manual</a>
+
+        </nav>
+
+
+        <!-- NAVIGATION COLUMN 2 -->
+        <nav class="footer-links" aria-label="Information navigation">
+
+            <a href="#">Product Registration</a>
+            <a href="#">Returns &amp; Warranty</a>
+            <a href="#">About us</a>
+            <a href="#">Wholesale</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQ's</a>
+
+        </nav>
+
+
+        <!-- NEWSLETTER -->
+        <div class="footer-newsletter">
+
+            <h3>
+                Become a Babywearing Know It All
+
+                <span>
+                    A surprisingly deep dive into carrying very small humans.
+                </span>
+            </h3>
+
+            <form class="footer-signup" method="post" action="#">
+
+                {% csrf_token %}
+
+                <label
+                    class="visually-hidden"
+                    for="footer-email"
+                >
+                    Email address
+                </label>
+
+                <input
+                    id="footer-email"
+                    type="email"
+                    name="email"
+                    placeholder="Email address"
+                    required
+                >
+
+                <button type="submit">
+                    I want in!
+                </button>
+
+            </form>
+
+            <p class="footer-privacy">
+                By subscribing, you agree to our privacy policy and consent
+                to receive updates from our company.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+{% endblock %}
